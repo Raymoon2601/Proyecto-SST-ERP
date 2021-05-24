@@ -44,11 +44,78 @@
                 <div class="user-img">
                     <img src="assets/imagenes/PersonIcon.svg" alt="">
                 </div>
+                <section class="dashboard-info">
+                    <h3 class="user-name">Deyner Antonio Romero Palomino</h3>
+                    <section class="user-info">
+                        <span>C.C 1039010010</span>
+                        <span>Líder de equipo de Desarrollo</span>
+                        <span>Directo GTH</span>
+                    </section>
+                </section>
+                <hr>
+                <section class="dashboard-options">
+                    <ul>
+                        <li class=""><img src="assets/imagenes/dashboard-icons/Datostrabajador.svg" alt=""></li>
+                        <li><img src="assets/imagenes/dashboard-icons/ElementosTrabajo.svg" alt=""></li>
+                        <li><img src="assets/imagenes/dashboard-icons/Capacitaciones.svg" alt=""></li>
+                        <li><img src="assets/imagenes/dashboard-icons/ExámenesYVacunas.svg" alt=""></li>
+                        <li><img src="assets/imagenes/dashboard-icons/Incapacidades.svg" alt=""></li>
+                        <li><img src="assets/imagenes/dashboard-icons/EnfermedadesLaborales.svg" alt=""></li>
+                        <li><img src="assets/imagenes/dashboard-icons/EstadoSalud.svg" alt=""></li>
+                        <li><img src="assets/imagenes/dashboard-icons/AccidentesLaborales.svg" alt=""></li>
+                    </ul>
+                </section>
             </nav>
         </aside>
         <section class="principal-content">
-            <section class="element-management">
+            <section class="elements">
+                <section class="progress">
 
+                </section>
+                <section class="element-management">
+                    <section class="element-header">
+                        <h2>Elementos pendientes por asignar</h2>
+                        <button class="btn-agg">
+                                <span class="tooltip">Asignar nuevo elemento de trabajo</span>
+                        </button>
+                    </section>
+                    <section class="card">
+                        <form action="">
+                            <section class="card-group">
+                                <ul>
+                                    <b>
+                                        <li>Parche ocular (PROGRAMA SST)</li>
+                                    </b>
+                                    <li>ASEO Y CAFETERÍA</li>
+                                    <li>Retiro</li>
+                                </ul>
+                            </section>
+                            <section class="card-group">
+                                <label for="">Estado</label>
+                                <select name="" id="">
+                                    <option value="1">Pendiente</option>
+                                    <option value="2">Asignado</option>
+                                </select>
+                            </section>
+                            <section class="card-group">
+                                <label for="">Fecha de entrega</label>
+                                <input type="date" name="" id="">
+                            </section>
+                            <section class="card-group">
+                                <label for="">Fecha de reposición</label>
+                                <input type="date">
+                            </section>
+                            <section class="card-group-observations">
+                                <textarea placeholder="Observaciones" name="" id="" cols="30" rows="10"></textarea>
+                                <div class="file-img">
+                                    <label for="file"><img src="assets/imagenes/File.svg" alt=""></label>
+                                    <input type="file" name="" id="file">
+                                </div>
+                                <button class="btn-primary">Completar</button>
+                            </section>
+                        </form>
+                    </section>
+                </section>
             </section>
         </section>
     </main>

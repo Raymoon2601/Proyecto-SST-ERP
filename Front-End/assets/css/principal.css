@@ -2,6 +2,11 @@
     --Gray:#F4F4F4;
     --tittle-gray:#696969;
     --blue:#5B7288;
+    --soft-gray:#969696;
+    --dark-blue:#1B344C;
+    --card-gray: #f7f7f7;
+    --label-gray:#5b5b5b;
+    --turquoise:#36A792;
 }
 
 html{
@@ -116,6 +121,10 @@ aside{
     height: 84%;
     box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .user-img{
@@ -130,7 +139,6 @@ aside{
     right: 0;
     margin:0 auto;
     display: flex;
-    align-content: center;
     justify-content: center;
 }
 
@@ -141,10 +149,208 @@ aside{
     align-items: center;
 }
 
-.element-management{
+.elements{
     width: 1065px;
     height: 90%;
     background: #FFFFFF;
     box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
+
+.user-name{
+    color: var(--tittle-gray);
+    font-weight: bold;
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.user-info{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--soft-gray);
+    font-size: 14px;
+}
+
+.dashboard-options{
+    width: 100%;
+}
+
+.dashboard ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.dashboard li{
+    margin: 0 10px 0 10px;
+}
+
+.dashboard hr{
+    height: 2px;
+    background-color: #ededed;
+    width: 78%;
+    border: none;
+}
+
+.progress{
+    width: 100%;
+    height: 20%;
+    border-bottom: #1B344C 2px solid;
+}
+
+.element-header{
+    width: 96%;
+    display: flex;
+    padding: 1%;
+    align-items: center;
+}
+
+h2{
+    font-size: 20px;
+    color: var(--tittle-gray);
+    margin: 1% 0 0 0 ;
+}
+
+.element-management{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card{
+    width: 95%;
+    height: 17%;
+    background-color: var(--card-gray);
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.19));
+    margin:2%;
+}
+
+.card form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.card-group{
+    margin :2px;
+    border-right: #c4c4c4 2px solid;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1% 0 1%;
+}
+
+.card-group ul{
+    font-size: 12px;
+    padding: 0;
+}
+
+label{
+    font-size: 14px;
+    display: block;
+    font-weight: bold;
+    color: var(--label-gray);
+}
+
+.card-group-observations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea{
+    height: 70%;
+    width: 20;
+}
+
+#file{
+    color: transparent;
+    background-image:url("../imagenes/File.svg") 
+}
+
+.file-img > input{
+    display: none;
+}
+
+.file-img img{
+    cursor: pointer;
+}
+
+input[type="date"], select, textarea{
+    color: #848484;
+    border: #848484 2px solid;
+}
+
+.btn-primary{
+    background-color: turquoise;
+    width: 107.58px;
+    height: 25.71px;
+    border-radius: 2px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    }
+
+.btn-agg{
+    background-image: url("../imagenes/Plus.svg");
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border:none;
+    cursor: pointer;
+    width: 25px;
+    padding: 0;
+    height: 23px;
+    margin-left: auto;
+}
+
+.tooltip {
+    width: 168px;
+    height: 30px;
+    background: #282828;
+    border-radius: 2px;
+    right: 4%;
+    top: 26%;
+    position: absolute;
+    visibility: hidden;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    font-size: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-agg .tooltip::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top:5px solid #282828 ;
+    border-left: 5px solid  transparent ;
+    border-right:5px solid #282828  ;
+    border-bottom: 5px solid  transparent ;
+    top: 95%;
+    right: 0%;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .btn-agg:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
