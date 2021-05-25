@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?xs9og');
+  src:  url('fonts/icomoon.eot?xs9og#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?xs9og') format('truetype'),
+    url('fonts/icomoon.woff?xs9og') format('woff'),
+    url('fonts/icomoon.svg?xs9og#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Capacitaciones:before {
+  content: "\e900";
+  color: #5b7288;
+}
+.icon-Datos-basicos:before {
+  content: "\e901";
+  color: #5b7288;
+}
+.icon-Elementos-de-trabajo:before {
+  content: "\e902";
+  color: #36a792;
+}
+.icon-EnfermedadesLaborales:before {
+  content: "\e903";
+  color: #5b7288;
+}
+.icon-Estado-de-salud:before {
+  content: "\e904";
+  color: #5b7288;
+}
+.icon-ExamenesYVacunas:before {
+  content: "\e905";
+  color: #5b7288;
+}
+.icon-Group-5:before {
+  content: "\e906";
+  color: #5b7288;
+}
+.icon-Incapacidades:before {
+  content: "\e907";
+  color: #5b7288;
+}
